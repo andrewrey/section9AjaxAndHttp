@@ -27,7 +27,7 @@ class FullPost extends Component {
     }
     if (this.state.loadedPost) {
       post = (
-        <div className="FullPost">
+        <div className="FullPost" style={{ backgroundColor: "lightblue" }}>
           <h1>{this.state.loadedPost.title}</h1>
           <p>{this.state.loadedPost.body}</p>
           <div className="Edit">
