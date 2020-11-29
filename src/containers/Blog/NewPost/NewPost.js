@@ -21,7 +21,6 @@ class NewPost extends Component {
     return (
       <div className="NewPost">
         <h1>Add a Post</h1>
-        <p>test: remove</p>
         <label>Title</label>
         <input type="text" value={this.state.title} onChange={(event) => this.setState({ title: event.target.value })} />
         <label>Content</label>
