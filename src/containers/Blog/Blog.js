@@ -30,7 +30,6 @@ class Blog extends Component {
             </ul>
           </nav>
         </header>
-        <p>Holder</p>
         <Route path="/" exact component={Posts} />
         <Route path="/new-post" exact component={NewPost} />
       </div>
