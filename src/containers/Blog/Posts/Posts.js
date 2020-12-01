@@ -34,7 +34,7 @@ class Posts extends Component {
   render() {
     let posts = <p style={{ textAlign: "center" }}>Something went Wrong!!!</p>;
     if (!this.state.error) {
-      posts = this.state.posts.map((post) => <Post title={post.title} author={post.author} key={post.id} clicked={() => this.postSelected(post.id)} {...this.props} />);
+      posts = this.state.posts.map((post) => <Post title={post.title} author={post.author} key={post.id} clicked={() => this.postSelected(post.id)} />);
     }
     return <section className="Posts">{posts}</section>;
   }
